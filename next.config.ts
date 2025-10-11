@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  images: {
+    unoptimized: true, // disables all built-in image optimization
+  },
+}
 
-export default nextConfig;
+export default nextConfig

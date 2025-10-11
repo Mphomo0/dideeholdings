@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "projectName": "Gamsberg: Construction of Plant, Civil, Electrical & Buildings - Phase 1",
+    "client": "Murray & Dickson Construction",
+    "completed": "2019-10-22",
+    "contactPerson": "Gawie Van Der Merwe ",
+    "designation": "Senior Contracts Manager"
+  },
+  {
+    "id": 2,
+    "projectName": "Gamsberg: Magnette Recovery - Civil Works",
+    "client": "Luxsant Construction & Projects",
+    "completed": "2019-11-09",
+    "contactPerson": "Gawie Van Der Merwe ",
+    "designation": "Senior Contracts Manager"
+  },
+  {
+    "id": 3,
+    "projectName": "Gamsberg Mining Phase 2 - Bulk Civil Works",
+    "client": "Luxsant Construction & Projects",
+    "completed": "2019-11-09",
+    "contactPerson": "Gawie Van Der Merwe ",
+    "designation": "Senior Contracts Manager"
+  },
+  {
+    "id": 4,
+    "projectName": "Aggeneys: Construction of 18 Duplex Apartments, Civil & Electrical Works",
+    "client": "Luxsant Construction & Projects",
+    "completed": "2020-12-03",
+    "contactPerson": "Gawie Van Der Merwe ",
+    "designation": "Senior Contracts Manager"
+  },
+  {
+    "id": 5,
+    "projectName": "Skorpion: Mining Phase 2 _ Bulk Water Reticulation",
+    "client": "Black Mountaing Mine",
+    "completed": "2023-03-21",
+    "contactPerson": "Sofia Nambunduga",
+    "designation": "Project Manager"
+  },
+  {
+    "id": 6,
+    "projectName": "Aggeneys: Aggeneys Apartments Bulk Civil Works",
+    "client": "Luxsant Construction & Projects",
+    "completed": "2023-03-21",
+    "contactPerson": "Gawie Van Der Merwe ",
+    "designation": "Senior Contracts Manager"
+  },
+  {
+    "id": 7,
+    "projectName": "Randfontein: Construction of 204 Stand Alones, 84 BNG Walk-ups Units including Water, Sewer & Electrical Works",
+    "client": "Ariobex Properties Pty Ltd",
+    "completed": "2023-03-31",
+    "contactPerson": "Hector Makgatho",
+    "designation": "Princal Agent"
+  },
+  {
+    "id": 8,
+    "projectName": "Randfontein: Construction of 168 BNG Walk-ups Units including Sewer, Water & Electrical Works",
+    "client": "Ariobex Properties Pty Ltd",
+    "completed": "27-02-2024",
+    "contactPerson": "Jaco Wesseloo",
+    "designation": "Development & Project Manager"
+  },
+  {
+    "id": 9,
+    "projectName": "Randfontein: Construction of 246 BNG Walk-ups Units including Water, Sewer & Electrical Works",
+    "client": "Ariobex Properties Pty Ltd",
+    "completed": "27-02-2024",
+    "contactPerson": "Jaco Wesseloo",
+    "designation": "Development & Project Manager"
+  },
+  {
+    "id": 10,
+    "projectName": "Randfontein: Construction of 358 BNG Walk-ups Units including Sewer, Water & Electrical Works",
+    "client": "Western Mega Project",
+    "completed": "27-02-2024",
+    "contactPerson": "Karabo Setjie",
+    "designation": "Project Manager"
+  },
+  {
+    "id": 11,
+    "projectName": "Randfontein: Construction of 234 BNG Walk-ups Units, 13 Military Houses, 11 Disability Houses, 59 Freestanding Houses including Sewer, Water & Electrical Works",
+    "client": "Maximum Group",
+    "completed": "On Progress",
+    "contactPerson": "Slaven Gajovic",
+    "designation": "Director"
+  }
+]
