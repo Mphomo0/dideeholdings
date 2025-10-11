@@ -14,7 +14,8 @@ const projects = [
     category: 'Commercial',
     location: 'Springbok, Northern Cape',
     completionDate: '2019-10-22',
-    image: commercial,
+    image:
+      'https://ik.imagekit.io/e2pess7p4/Didee/projects/commercial.jpg?updatedAt=1760181726538?tr=w-800,h-600,fo-auto',
     status: 'Completed',
   },
   {
@@ -23,7 +24,8 @@ const projects = [
     category: 'Industrial',
     location: 'Northern Cape',
     completionDate: '21-Mar-23',
-    image: industrial,
+    image:
+      'https://ik.imagekit.io/e2pess7p4/Didee/projects/industrial.jpg?updatedAt=1760181726008?tr=w-800,h-600,fo-auto',
     status: 'In Progress',
   },
   {
@@ -33,7 +35,8 @@ const projects = [
     category: 'Residential',
     location: 'Randfontein, Gauteng',
     completionDate: '31-Mar-23',
-    image: residential,
+    image:
+      'https://ik.imagekit.io/e2pess7p4/Didee/projects/residential.jpg?updatedAt=1760181726515?tr=w-800,h-600,fo-auto',
     status: 'Completed',
   },
 ]
@@ -70,6 +73,9 @@ export default function ProjectsHome() {
                 <Image
                   src={project.image}
                   alt={project.title}
+                  width={800}
+                  height={600}
+                  unoptimized
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute top-4 left-4">

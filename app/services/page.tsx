@@ -90,37 +90,37 @@ const services = [
 
 export default function Services() {
   return (
-    <div className='bg-gray-50 min-h-screen'>
+    <div className="bg-gray-50 min-h-screen">
       <PageHeader
-        title='Services'
-        subtitle='Get in touch with us'
-        image='/images/contact.jpg'
+        title="Services"
+        subtitle="Our range of construction services"
+        image="https://ik.imagekit.io/e2pess7p4/Didee/contact.jpg?updatedAt=1760181727028?tr=w-1200,h-600,fo-auto"
       />
 
-      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16'>
-        <section className='py-20'>
-          <div className='container mx-auto px-4'>
-            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {services.map((service, index) => (
                 <Card
                   key={index}
-                  className='border border-gray-200 hover:shadow-xl transition-color duration-300 hover:border-blue-600'
+                  className="border border-gray-200 hover:shadow-xl transition-color duration-300 hover:border-blue-600"
                 >
                   <CardHeader>
-                    <service.icon className='h-12 w-12 text-blue-600 mb-4' />
-                    <CardTitle className='text-2xl'>{service.title}</CardTitle>
+                    <service.icon className="h-12 w-12 text-blue-600 mb-4" />
+                    <CardTitle className="text-2xl">{service.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className='text-gray-600 mb-6 leading-relaxed'>
+                    <p className="text-gray-600 mb-6 leading-relaxed">
                       {service.description}
                     </p>
-                    <ul className='space-y-2'>
+                    <ul className="space-y-2">
                       {service.features.map((feature, featureIndex) => (
                         <li
                           key={featureIndex}
-                          className='flex items-center text-sm text-gray-700'
+                          className="flex items-center text-sm text-gray-700"
                         >
-                          <div className='w-2 h-2 bg-blue-600 rounded-full mr-3' />
+                          <div className="w-2 h-2 bg-blue-600 rounded-full mr-3" />
                           {feature}
                         </li>
                       ))}

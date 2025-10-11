@@ -5,11 +5,11 @@ import OurValues from '@/components/sections/about/OurValues'
 
 export default function About() {
   return (
-    <div className='bg-gray-50 min-h-screen'>
+    <div className="bg-gray-50 min-h-screen">
       <PageHeader
-        title='About'
-        subtitle='Get in touch with us'
-        image='/images/contact.jpg'
+        title="About"
+        subtitle="Getting to know us"
+        image="https://ik.imagekit.io/e2pess7p4/Didee/contact.jpg?updatedAt=1760181727028?tr=w-1920,h-600,fo-auto"
       />
       <div>
         <OurStory />

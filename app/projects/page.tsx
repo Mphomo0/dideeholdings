@@ -8,7 +8,7 @@ export default function Projects() {
       <PageHeader
         title="Projects"
         subtitle="Completed, pending, and in progress projects"
-        image="/images/contact.jpg"
+        image="https://ik.imagekit.io/e2pess7p4/Didee/contact.jpg?updatedAt=1760181727028?tr=w-1200,h-600,fo-auto"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
