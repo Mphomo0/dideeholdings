@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   title: 'Didee Holdings - We Build Your Future',
   description:
     'Professional construction services wit a focus to safety, quality, and realiability. Serving Centurion and Northern Cape since 2018',
+  other: {
+    'google-site-verification': 'NGImAA3SJhPN6t7BHUfUXiGjsA-olnCds9ZhWXkMXY',
+  },
 }
 
 export default function RootLayout({
