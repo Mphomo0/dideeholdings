@@ -4,9 +4,10 @@ import Script from 'next/script'
 import { usePathname } from 'next/navigation'
 import { useEffect } from 'react'
 
+// Declare gtag type globally (you can move this to a global.d.ts file)
 declare global {
   interface Window {
-    gtag?: (...args: any[]) => void
+    gtag?: (...args: unknown[]) => void
   }
 }
 
