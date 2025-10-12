@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import PageHeader from '@/components/global/PageHeader'
 import CompletedProjects from '@/components/sections/projects/CompletedProjects'
 
