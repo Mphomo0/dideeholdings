@@ -1,9 +1,6 @@
 import Image from 'next/image'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import commercial from '@/public/images/projects/commercial.jpg'
-import residential from '@/public/images/projects/residential.jpg'
-import industrial from '@/public/images/projects/industrial.jpg'
 import { Calendar, ExternalLink, MapPin } from 'lucide-react'
 import Link from 'next/link'
 

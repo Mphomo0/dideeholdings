@@ -4,12 +4,18 @@ import Script from 'next/script'
 import { usePathname } from 'next/navigation'
 import { useEffect } from 'react'
 
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void
+  }
+}
+
 export default function GoogleAnalytics({ gaId }: { gaId: string }) {
   const pathname = usePathname()
 
   useEffect(() => {
     if (!pathname) return
-    ;(window as any).gtag?.('config', gaId, { page_path: pathname })
+    window.gtag?.('config', gaId, { page_path: pathname })
   }, [pathname, gaId])
 
   return (
