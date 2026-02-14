@@ -146,7 +146,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Didee Holdings Pty Ltd. All rights
             reserved. Developed by{' '}
             <a
-              href="https://nostalgic-studio.com"
+              href="https://nostalgic-studio.co.za"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400 hover:text-blue-300"
