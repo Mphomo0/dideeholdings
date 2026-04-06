@@ -3,8 +3,9 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/global/Navbar'
 import Footer from '@/components/global/Footer'
-import GoogleAnalytics from '@/components/global/GoogleAnalytics'
-import Script from 'next/script'
+
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID
+const AHREFS_KEY = process.env.NEXT_PUBLIC_AHREFS_KEY
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -29,17 +30,36 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {GA_ID && (
+          <>
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+            />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', '${GA_ID}');
+                `,
+              }}
+            />
+          </>
+        )}
+        {AHREFS_KEY && (
+          <script
+            async
+            src="https://analytics.ahrefs.com/analytics.js"
+            data-key={AHREFS_KEY}
+          />
+        )}
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {process.env.NEXT_PUBLIC_GA_ID && (
-          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
-        )}
-        <Script
-          src="https://analytics.ahrefs.com/analytics.js"
-          data-key="wnb5XBO4SNxIkYnPMzO+OA"
-          strategy="afterInteractive"
-        />
         <Navbar />
         {children}
         <Footer />
