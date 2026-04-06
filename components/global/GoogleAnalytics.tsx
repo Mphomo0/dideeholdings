@@ -23,9 +23,9 @@ return (
     <>
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
-        strategy="beforeInteractive"
+        strategy="afterInteractive"
       />
-      <Script id="ga-init" strategy="beforeInteractive">
+      <Script id="ga-init" strategy="afterInteractive">
         {`
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
