@@ -5,7 +5,7 @@ import Navbar from '@/components/global/Navbar'
 import Footer from '@/components/global/Footer'
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID
-const AHREFS_KEY = process.env.NEXT_PUBLIC_AHREFS_KEY
+const AHREFS_VERIFICATION = process.env.NEXT_PUBLIC_AHREFS_SITE_VERIFICATION
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -21,6 +21,13 @@ export const metadata: Metadata = {
   title: 'Didee Holdings - We Build Your Future',
   description:
     'Professional construction services wit a focus to safety, quality, and realiability. Serving Centurion and Northern Cape since 2018',
+  verification: AHREFS_VERIFICATION
+    ? {
+        other: {
+          'ahrefs-site-verification': AHREFS_VERIFICATION,
+        },
+      }
+    : undefined,
 }
 
 export default function RootLayout({
@@ -48,13 +55,6 @@ export default function RootLayout({
               }}
             />
           </>
-        )}
-        {AHREFS_KEY && (
-          <script
-            async
-            src="https://analytics.ahrefs.com/analytics.js"
-            data-key={AHREFS_KEY}
-          />
         )}
       </head>
       <body
