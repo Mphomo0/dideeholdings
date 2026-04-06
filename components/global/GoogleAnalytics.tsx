@@ -19,19 +19,19 @@ export default function GoogleAnalytics({ gaId }: { gaId: string }) {
     window.gtag?.('config', gaId, { page_path: pathname })
   }, [pathname, gaId])
 
-  return (
+return (
     <>
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
-        strategy="afterInteractive"
+        strategy="beforeInteractive"
       />
-      <Script id="ga-init" strategy="afterInteractive">
+      <Script id="ga-init" strategy="beforeInteractive">
         {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${gaId}');
-        `}
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${gaId}');
+      `}
       </Script>
     </>
   )
