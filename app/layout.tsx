@@ -30,7 +30,14 @@ export default function RootLayout({
 return (
     <html lang="en">
       <Head>
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+        )}
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="wnb5XBO4SNxIkYnPMzO+OA"
+          async
+        />
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
