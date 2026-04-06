@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
-import Head from 'next/head'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/global/Navbar'
 import Footer from '@/components/global/Footer'
 import GoogleAnalytics from '@/components/global/GoogleAnalytics'
+import Script from 'next/script'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -27,21 +27,19 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-return (
+  return (
     <html lang="en">
-      <Head>
-        {process.env.NEXT_PUBLIC_GA_ID && (
-          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
-        )}
-        <script
-          src="https://analytics.ahrefs.com/analytics.js"
-          data-key="wnb5XBO4SNxIkYnPMzO+OA"
-          async
-        />
-      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+        )}
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="wnb5XBO4SNxIkYnPMzO+OA"
+          strategy="afterInteractive"
+        />
         <Navbar />
         {children}
         <Footer />
