@@ -28,7 +28,7 @@ export default function OurStory() {
           </div>
           <div className="relative">
             <Image
-              src="https://ik.imagekit.io/e2pess7p4/Didee/aboutPage.jpg?updatedAt=1760181728568?tr=w-800,h-600,q-80,f-auto"
+              src="https://ik.imagekit.io/e2pess7p4/Didee/aboutPage.jpg?updatedAt=1760181728568&tr=w-800,h-600,q-80,f-auto"
               alt="Didee Holdings team"
               width={800}
               height={600}

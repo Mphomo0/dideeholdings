@@ -12,7 +12,7 @@ const projects = [
     location: 'Springbok, Northern Cape',
     completionDate: '2019-10-22',
     image:
-      'https://ik.imagekit.io/e2pess7p4/Didee/projects/commercial.jpg?updatedAt=1760181726538?tr=w-800,h-600,fo-auto',
+      'https://ik.imagekit.io/e2pess7p4/Didee/projects/commercial.jpg?updatedAt=1760181726538&tr=w-800,h-600,fo-auto',
     status: 'Completed',
   },
   {
@@ -22,7 +22,7 @@ const projects = [
     location: 'Northern Cape',
     completionDate: '21-Mar-23',
     image:
-      'https://ik.imagekit.io/e2pess7p4/Didee/projects/industrial.jpg?updatedAt=1760181726008?tr=w-800,h-600,fo-auto',
+      'https://ik.imagekit.io/e2pess7p4/Didee/projects/industrial.jpg?updatedAt=1760181726008&tr=w-800,h-600,fo-auto',
     status: 'In Progress',
   },
   {
@@ -33,7 +33,7 @@ const projects = [
     location: 'Randfontein, Gauteng',
     completionDate: '31-Mar-23',
     image:
-      'https://ik.imagekit.io/e2pess7p4/Didee/projects/residential.jpg?updatedAt=1760181726515?tr=w-800,h-600,fo-auto',
+      'https://ik.imagekit.io/e2pess7p4/Didee/projects/residential.jpg?updatedAt=1760181726515&tr=w-800,h-600,fo-auto',
     status: 'Completed',
   },
 ]

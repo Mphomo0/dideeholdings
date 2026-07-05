@@ -94,7 +94,7 @@ export default function Services() {
       <PageHeader
         title="Services"
         subtitle="Our range of construction services"
-        image="https://ik.imagekit.io/e2pess7p4/Didee/contact.jpg?updatedAt=1760181727028?tr=w-1200,h-600,fo-auto"
+        image="https://ik.imagekit.io/e2pess7p4/Didee/contact.jpg?updatedAt=1760181727028&tr=w-1200,h-600,fo-auto"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

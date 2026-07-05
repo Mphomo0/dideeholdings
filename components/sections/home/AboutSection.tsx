@@ -36,7 +36,7 @@ export default function AboutSection() {
           <div className="relative">
             <div className="absolute -top-4 -left-4 w-full h-full bg-blue-600 rounded-lg"></div>
             <Image
-              src="https://ik.imagekit.io/e2pess7p4/Didee/aboutHome.jpg?updatedAt=1760181725716?tr=w-800,h-600,q-80,f-auto"
+              src="https://ik.imagekit.io/e2pess7p4/Didee/aboutHome.jpg?updatedAt=1760181725716&tr=w-800,h-600,q-80,f-auto"
               alt="Construction professional"
               width={800}
               height={600}

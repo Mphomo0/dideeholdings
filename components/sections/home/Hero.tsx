@@ -13,7 +13,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://ik.imagekit.io/e2pess7p4/Didee/hero.jpg?updatedAt=1760181728018?tr=w-1920,h-1080,q-80,f-auto"
+          src="https://ik.imagekit.io/e2pess7p4/Didee/hero.jpg?updatedAt=1760181728018&tr=w-1920,h-1080,q-80,f-auto"
           alt="Modern construction site with cranes"
           fill
           sizes="100vw"
