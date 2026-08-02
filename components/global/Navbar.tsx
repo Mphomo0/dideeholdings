@@ -42,12 +42,12 @@ export default function Navbar() {
           <div className="flex items-center space-x-2">
             <Link href="/">
               <Image
-                src="https://ik.imagekit.io/e2pess7p4/Didee/new.webp?tr=w-240,h-120,q-80,f-auto"
-                width={120}
-                height={120}
+                src="https://ik.imagekit.io/e2pess7p4/Didee/new.webp?tr=w-240,q-80,f-auto"
+                width={233}
+                height={100}
                 priority
                 alt="Logo"
-                className="h-auto w-auto"
+                className="h-10 w-auto"
                 unoptimized
               />
             </Link>

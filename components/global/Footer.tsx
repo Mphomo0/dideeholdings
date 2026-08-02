@@ -11,11 +11,14 @@ export default function Footer() {
           <div>
             <div className="flex items-center space-x-3 mb-6">
               <Image
-                src="/images/logo_white.png"
+                src="https://ik.imagekit.io/e2pess7p4/Didee/new.webp?tr=w-320,q-80,f-auto"
                 alt="Logo"
-                width={150}
-                height={150}
-                className="w-auto h-auto"
+                width={233}
+                height={100}
+                // logo_white.png is cropped flush to its canvas (artwork runs off
+                // the left edge), so render the uncut mark white instead.
+                className="h-16 w-auto brightness-0 invert"
+                unoptimized
               />
             </div>
             <p className="text-white mb-6 leading-relaxed">
