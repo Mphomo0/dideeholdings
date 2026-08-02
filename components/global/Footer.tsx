@@ -15,8 +15,8 @@ export default function Footer() {
                 alt="Logo"
                 width={233}
                 height={100}
-                // logo_white.png is cropped flush to its canvas (artwork runs off
-                // the left edge), so render the uncut mark white instead.
+                // No dedicated white asset: the old one was cropped flush to its
+                // canvas, so render the uncut mark white instead.
                 className="h-16 w-auto brightness-0 invert"
                 unoptimized
               />
