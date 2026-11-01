@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 text-white">
       <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 xl:gap-8">
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
@@ -135,7 +135,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-white mr-3 flex-shrink-0" />
-                <span className="text-white text-sm">
+                <span className="min-w-0 break-words text-white text-sm">
                   stopper@dideeholdings.co.za
                 </span>
               </div>

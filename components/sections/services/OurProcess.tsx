@@ -5,7 +5,7 @@ export default function OurProcess() {
     <section className='py-20 bg-gray-100'>
       <div className='container mx-auto px-4'>
         <div className='text-center mb-16'>
-          <h2 className='text-4xl font-bold text-gray-900 mb-4'>Our Process</h2>
+          <h2 className='text-3xl sm:text-4xl font-bold text-gray-900 mb-4'>Our Process</h2>
           <p className='text-gray-600 text-lg max-w-2xl mx-auto'>
             We follow a proven process to ensure every project is delivered on
             time, within budget, and to the highest quality standards.

@@ -15,7 +15,7 @@ export default function CompletedProjects() {
   return (
     <div className="w-full">
       {/* Desktop Table View */}
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <Table>
           <TableCaption>A list of all our projects.</TableCaption>
           <TableHeader>
@@ -48,7 +48,7 @@ export default function CompletedProjects() {
       </div>
 
       {/* Mobile Card View */}
-      <div className="block md:hidden space-y-4">
+      <div className="grid gap-4 md:grid-cols-2 lg:hidden">
         {projects.map((project) => (
           <div
             key={project.id}

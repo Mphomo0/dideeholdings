@@ -6,7 +6,7 @@ export default function OurValues() {
     <section className='py-20 bg-gray-200'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='text-center mb-16'>
-          <h2 className='text-4xl font-bold text-gray-900 mb-4'>
+          <h2 className='text-3xl sm:text-4xl font-bold text-gray-900 mb-4'>
             Our Core Values
           </h2>
           <p className='text-gray-600 text-lg max-w-2xl mx-auto'>
@@ -15,8 +15,8 @@ export default function OurValues() {
           </p>
         </div>
 
-        <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-8'>
-          <Card className='bg-white text-center border border-gray-200 p-8 hover:shadow-xl transition-color duration-300 hover:border-blue-600'>
+        <div className='grid md:grid-cols-2 xl:grid-cols-4 gap-8'>
+          <Card className='bg-white text-center border border-gray-200 p-4 sm:p-8 hover:shadow-xl transition-color duration-300 hover:border-blue-600'>
             <CardContent className='pt-6'>
               <Shield className='h-16 w-16 text-blue-600 mx-auto mb-6' />
               <h3 className='text-2xl font-semibold mb-4'>Safety First</h3>
@@ -27,7 +27,7 @@ export default function OurValues() {
             </CardContent>
           </Card>
 
-          <Card className='bg-white text-center border border-gray-200 p-8 hover:shadow-xl transition-color duration-300 hover:border-blue-600'>
+          <Card className='bg-white text-center border border-gray-200 p-4 sm:p-8 hover:shadow-xl transition-color duration-300 hover:border-blue-600'>
             <CardContent className='pt-6'>
               <Award className='h-16 w-16 text-blue-600 mx-auto mb-6' />
               <h3 className='text-2xl font-semibold mb-4'>
@@ -40,7 +40,7 @@ export default function OurValues() {
             </CardContent>
           </Card>
 
-          <Card className='bg-white text-center border border-gray-200 p-8 hover:shadow-xl transition-color duration-300 hover:border-blue-600'>
+          <Card className='bg-white text-center border border-gray-200 p-4 sm:p-8 hover:shadow-xl transition-color duration-300 hover:border-blue-600'>
             <CardContent className='pt-6'>
               <Target className='h-16 w-16 text-blue-600 mx-auto mb-6' />
               <h3 className='text-2xl font-semibold mb-4'>Reliability</h3>
@@ -51,7 +51,7 @@ export default function OurValues() {
             </CardContent>
           </Card>
 
-          <Card className='bg-white text-center border border-gray-200 p-8 hover:shadow-xl transition-color duration-300 hover:border-blue-600'>
+          <Card className='bg-white text-center border border-gray-200 p-4 sm:p-8 hover:shadow-xl transition-color duration-300 hover:border-blue-600'>
             <CardContent className='pt-6'>
               <Users className='h-16 w-16 text-blue-600 mx-auto mb-6' />
               <h3 className='text-2xl font-semibold mb-4'>Partnership</h3>

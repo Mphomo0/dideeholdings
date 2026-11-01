@@ -50,7 +50,7 @@ export default function ProjectsHome() {
             </span>
             <div className="w-12 h-1 bg-blue-600 ml-4"></div>
           </div>
-          <h2 className="text-5xl font-black text-gray-900 mb-4 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 mb-4 leading-tight">
             Featured Projects
           </h2>
           <p className="text-gray-700 text-lg max-w-3xl mx-auto font-medium">
@@ -64,7 +64,7 @@ export default function ProjectsHome() {
           {projects.map((project) => (
             <Card
               key={project.id}
-              className="group bg-white border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-300"
+              className="group bg-white border border-gray-200 overflow-hidden md:max-lg:last:col-span-2 hover:shadow-2xl transition-all duration-300"
             >
               <div className="relative overflow-hidden -top-6">
                 <Image
@@ -111,9 +111,14 @@ export default function ProjectsHome() {
                   </div>
                 </div>
 
-                <Button className="w-full group hover:bg-blue-600 border border-blue-600 text-black hover:text-white transition-colors">
-                  <Link href="/projects">View Details</Link>
-                  <ExternalLink className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                <Button
+                  asChild
+                  className="w-full group hover:bg-blue-600 border border-blue-600 text-black hover:text-white transition-colors"
+                >
+                  <Link href="/projects">
+                    View Details
+                    <ExternalLink className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -123,7 +128,7 @@ export default function ProjectsHome() {
           <Button
             asChild
             size="lg"
-            className="w-full md:w-1/3 bg-blue-600 hover:bg-blue-700 text-white font-bold px-10 py-6"
+            className="w-full sm:w-auto lg:w-1/3 bg-blue-600 hover:bg-blue-700 text-white font-bold px-10 py-6"
           >
             <Link href="/projects">VIEW ALL PROJECTS</Link>
           </Button>

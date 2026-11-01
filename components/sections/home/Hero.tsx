@@ -9,7 +9,7 @@ export default function Hero() {
   const [imageLoaded, setImageLoaded] = useState(false)
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
+    <section className="relative min-h-svh flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -17,6 +17,7 @@ export default function Hero() {
           alt="Modern construction site with cranes"
           fill
           sizes="100vw"
+          preload
           unoptimized
           className={`w-full h-full object-cover transition-opacity duration-1000 ${
             imageLoaded ? 'opacity-60' : 'opacity-0'
@@ -28,7 +29,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-36 sm:py-36 lg:py-44">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 sm:py-36 lg:py-44">
         <div className="text-center lg:text-left">
           {/* Badge */}
           <div className="mb-6 sm:mb-8">
@@ -37,17 +38,17 @@ export default function Hero() {
               <span className="hidden">
                 Excellence in Construction Since 2018
               </span>
-              <span className="xs:hidden">Est. 2018</span>
+              <span>Est. 2018</span>
             </span>
           </div>
 
           {/* Main heading - Responsive typography */}
           <div className="mb-6 sm:mb-8">
             <h1 className="font-black leading-tight">
-              <span className=" text-white drop-shadow-2xl text-3xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-8xl mb-2 sm:mb-4">
+              <span className="block text-white drop-shadow-2xl text-3xl min-[360px]:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-2 sm:mb-4">
                 WE BUILD
               </span>
-              <span className="block text-transparent bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+              <span className="block text-transparent bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text text-3xl min-[360px]:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
                 YOUR FUTURE
               </span>
             </h1>
@@ -72,25 +73,21 @@ export default function Hero() {
 
           {/* Buttons - Responsive layout and sizing */}
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-12 sm:mb-16 justify-center lg:justify-start px-2 sm:px-0">
-            <button className="w-full sm:w-auto bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold rounded-2xl transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/25 text-sm sm:text-base lg:text-lg px-6 sm:px-8 lg:px-10 py-3 sm:py-4 lg:py-5">
-              <Link
-                href="/contact"
-                className="flex items-center justify-center"
-              >
-                Get Started Today
-                <ArrowRight className="ml-2 sm:ml-3 h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6" />
-              </Link>
-            </button>
+            <Link
+              href="/contact"
+              className="flex items-center justify-center w-full sm:w-auto bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold rounded-2xl transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/25 text-sm sm:text-base lg:text-lg px-6 sm:px-8 lg:px-10 py-3 sm:py-4 lg:py-5"
+            >
+              Get Started Today
+              <ArrowRight className="ml-2 sm:ml-3 h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6" />
+            </Link>
 
-            <button className="w-full sm:w-auto bg-white/5 border-2 border-white/20 text-white hover:bg-white/10 hover:border-cyan-400/50 rounded-2xl font-semibold transition-all duration-300 backdrop-blur-md hover:shadow-xl text-sm sm:text-base lg:text-lg px-6 sm:px-8 lg:px-10 py-3 sm:py-4 lg:py-5">
-              <Link
-                href="/projects"
-                className="flex items-center justify-center"
-              >
-                <Shield className="mr-2 sm:mr-3 h-4 w-4 sm:h-5 sm:w-5" />
-                View Our Projects
-              </Link>
-            </button>
+            <Link
+              href="/projects"
+              className="flex items-center justify-center w-full sm:w-auto bg-white/5 border-2 border-white/20 text-white hover:bg-white/10 hover:border-cyan-400/50 rounded-2xl font-semibold transition-all duration-300 backdrop-blur-md hover:shadow-xl text-sm sm:text-base lg:text-lg px-6 sm:px-8 lg:px-10 py-3 sm:py-4 lg:py-5"
+            >
+              <Shield className="mr-2 sm:mr-3 h-4 w-4 sm:h-5 sm:w-5" />
+              View Our Projects
+            </Link>
           </div>
 
           {/* Stats - Responsive grid and sizing */}

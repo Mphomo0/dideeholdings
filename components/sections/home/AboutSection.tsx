@@ -14,7 +14,7 @@ export default function AboutSection() {
                 About Our Company
               </span>
             </div>
-            <h2 className="text-5xl font-black text-gray-900 mb-6 leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 mb-6 leading-tight">
               BUILDING SOUTH AFRICA&rsquo;S FUTURE
             </h2>
             <p className="text-gray-700 text-lg mb-6 leading-relaxed font-medium">
@@ -29,7 +29,10 @@ export default function AboutSection() {
               of expertise to every project, ensuring quality workmanship,
               on-time delivery, and complete client satisfaction.
             </p>
-            <Button className="w-full md:w-2/5 bg-blue-600 font-bold px-8 p-6 text-white">
+            <Button
+              asChild
+              className="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 font-bold px-8 py-6 text-white"
+            >
               <Link href="/about">LEARN MORE ABOUT US</Link>
             </Button>
           </div>
@@ -40,7 +43,7 @@ export default function AboutSection() {
               alt="Construction professional"
               width={800}
               height={600}
-              className="rounded-lg shadow-xl relative z-10"
+              className="w-full h-auto rounded-lg shadow-xl relative z-10"
               unoptimized
             />
           </div>

@@ -12,7 +12,7 @@ export default function PageHeader({
   image,
 }: PageHeaderProps) {
   return (
-    <section className="relative py-56 bg-gradient-to-r from-blue-900 to-cyan-900">
+    <section className="relative pt-36 pb-20 sm:py-44 lg:py-56 bg-gradient-to-r from-blue-900 to-cyan-900">
       {image && (
         <div className="absolute bg-black inset-0 opacity-10">
           <Image
@@ -27,10 +27,10 @@ export default function PageHeader({
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-tight text-shadow-2xl">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-tight text-shadow-2xl">
             {title}
           </h1>
-          <p className="text-xl text-gray-300 leading-relaxed font-medium">
+          <p className="mt-4 text-lg sm:text-xl text-gray-300 leading-relaxed font-medium">
             {subtitle}
           </p>
         </div>
