@@ -15,7 +15,7 @@ export default function ServicesHome() {
             </span>
             <div className='w-12 h-1 bg-blue-600 ml-4'></div>
           </div>
-          <h2 className='text-5xl font-black text-gray-900 mb-4 leading-tight'>
+          <h2 className='text-2xl min-[320px]:text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 mb-4 leading-tight'>
             CONSTRUCTION SERVICES
           </h2>
           <p className='text-gray-700 text-lg max-w-3xl mx-auto font-medium'>
@@ -25,7 +25,7 @@ export default function ServicesHome() {
         </div>
 
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
-          <Card className='bg-gray-50 border border-gray-200 text-center p-8 hover:shadow-xl transition-color duration-300 hover:border-blue-600 group'>
+          <Card className='bg-gray-50 border border-gray-200 text-center p-4 sm:p-8 md:max-lg:last:col-span-2 hover:shadow-xl transition-color duration-300 hover:border-blue-600 group'>
             <CardContent className='pt-6'>
               <div className='w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-600 transition-colors'>
                 <Building2 className='h-10 w-10 text-blue-600 group-hover:text-white' />
@@ -40,7 +40,7 @@ export default function ServicesHome() {
             </CardContent>
           </Card>
 
-          <Card className='bg-gray-50 border border-gray-200 text-center p-8 hover:shadow-xl transition-color duration-300 hover:border-blue-600 group'>
+          <Card className='bg-gray-50 border border-gray-200 text-center p-4 sm:p-8 md:max-lg:last:col-span-2 hover:shadow-xl transition-color duration-300 hover:border-blue-600 group'>
             <CardContent className='pt-6'>
               <div className='w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-600 transition-colors'>
                 <Truck className='h-10 w-10 text-blue-600 group-hover:text-white' />
@@ -55,7 +55,7 @@ export default function ServicesHome() {
             </CardContent>
           </Card>
 
-          <Card className='bg-gray-50 border border-gray-200 text-center p-8 hover:shadow-xl transition-color duration-300 hover:border-blue-600 group'>
+          <Card className='bg-gray-50 border border-gray-200 text-center p-4 sm:p-8 md:max-lg:last:col-span-2 hover:shadow-xl transition-color duration-300 hover:border-blue-600 group'>
             <CardContent className='pt-6'>
               <div className='w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-600 transition-colors'>
                 <Shield className='h-10 w-10 text-blue-600 group-hover:text-white' />
@@ -75,7 +75,7 @@ export default function ServicesHome() {
           <Button
             asChild
             size='lg'
-            className='w-full md:w-2/8 bg-blue-600 hover:bg-blue-700 text-white font-bold px-10 py-6'
+            className='w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold px-10 py-6'
           >
             <Link href='/services'>VIEW ALL SERVICES</Link>
           </Button>

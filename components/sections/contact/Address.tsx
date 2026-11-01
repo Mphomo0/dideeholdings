@@ -24,15 +24,15 @@ export default function Address() {
             </div>
           </div>
 
-          <div className='flex flex-start'>
+          <div className='flex items-start'>
             <Mail className='h-6 w-6 text-blue-500 mt-1 mr-4 flex-shrink-0' />
-            <div>
+            <div className='min-w-0'>
               <h3 className='font-semibold mb-1'>Email</h3>
-              <p className='text-gray-600'>stopper@dideeholdings.co.za</p>
+              <p className='break-words text-sm min-[360px]:text-base text-gray-600'>stopper@dideeholdings.co.za</p>
             </div>
           </div>
 
-          <div className='flex flex-start'>
+          <div className='flex items-start'>
             <Phone className='h-6 w-6 text-blue-500 mt-1 mr-4 flex-shrink-0' />
             <div>
               <h3 className='font-semibold mb-1'>Phone</h3>
@@ -40,7 +40,7 @@ export default function Address() {
             </div>
           </div>
 
-          <div className='flex flex-start'>
+          <div className='flex items-start'>
             <Clock className='h-6 w-6 text-blue-500 mt-1 mr-4 flex-shrink-0' />
             <div>
               <h3 className='font-semibold mb-1'>Business Hours</h3>

@@ -75,6 +75,8 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <button
             className="md:hidden p-2"
+            aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={isMenuOpen}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
@@ -86,13 +88,13 @@ export default function Navbar() {
         </div>
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden pb-4 border-b border-gray-200">
-            <nav className="flex flex-col space-y-4 pt-4">
+          <div className="md:hidden pb-4 border-b border-gray-200 max-h-[calc(100svh-4.5rem)] overflow-y-auto">
+            <nav className="flex flex-col space-y-2 pt-2">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+                  className="py-2 text-foreground hover:text-primary transition-colors duration-200 font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
@@ -102,6 +104,7 @@ export default function Navbar() {
                 <Link
                   href="/contact"
                   className="bg-white border border-black hover:bg-blue-500 text-black hover:border-transparent hover:text-white font-semibold py-2 px-4 rounded transition duration-300 ease-in-out text-center"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   Get Quote
                 </Link>

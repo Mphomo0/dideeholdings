@@ -6,7 +6,7 @@ export default function OurStory() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
             <p className="text-gray-600 text-lg mb-6 leading-relaxed">
               The origins of the present Company date back to 2018 when Didee
               Holdings Pty Ltd was formed by Stopper Rantsiapana and Didintle
@@ -32,7 +32,7 @@ export default function OurStory() {
               alt="Didee Holdings team"
               width={800}
               height={600}
-              className="rounded-lg shadow-xl"
+              className="w-full h-auto rounded-lg shadow-xl"
               unoptimized
             />
           </div>

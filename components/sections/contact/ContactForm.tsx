@@ -17,7 +17,7 @@ export default function ContactForm() {
         </CardHeader>
         <CardContent>
           <form className='space-y-6'>
-            <div className='grid md:grid-cols-2 gap-4'>
+            <div className='grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-4'>
               <div className='space-y-2'>
                 <Label htmlFor='firstName'>First Name</Label>
                 <Input
